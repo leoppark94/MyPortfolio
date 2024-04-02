@@ -1,0 +1,24 @@
+/* Footer Img Style */
+.container img {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Footer Text Style */
+.container p {
+  font-family: 'Nanum Gothic Coding', monospace;
+  margin: 0;
+}
+
+/* Footer Container Style */
+.container {
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  height: 75px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
