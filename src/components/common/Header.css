@@ -1,24 +1,104 @@
-.icon-backend {
-  width: 60px;
-  height: 60px;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
-.icon-frontend {
-  width: 60px;
-  height: 60px;
+.header-left-content {
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.icon-ai {
-  width: 60px;
-  height: 60px;
+.header-right-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.icon-aboutme {
-  width: 60px;
-  height: 60px;
+.header-title-main {
+  font-weight: bold;
+  font-size: 50px;
 }
 
+.header-title-sub {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.icon-backend,
+.icon-frontend,
+.icon-ai,
+.icon-aboutme,
 .icon-email {
   width: 60px;
   height: 60px;
+  margin-left: 60px;
+}
+.hamburger {
+  display: none;
+}
+
+.BackEnd-Describe,
+.FrontEnd-Describe,
+.AI-Describe,
+.AboutMe-Describe,
+.Email-Describe {
+  margin-left: 10px;
+}
+
+@media (max-width: 1250px) {
+  .header-right-content {
+    display: none;
+  }
+
+  .header-right-content.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100px;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    width: 35px;
+  }
+
+  .icon-toggle {
+    width: 60px;
+    height: 60px;
+    margin-right: 40px;
+  }
+  .BackEnd-Describe,
+  .FrontEnd-Describe,
+  .AI-Describe,
+  .AboutMe-Describe,
+  .Email-Describe {
+    text-align: center; /* 텍스트를 가운데 정렬 */
+  }
+
+  .icon-backend,
+  .icon-frontend,
+  .icon-ai,
+  .icon-aboutme,
+  .icon-email {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+  }
 }
