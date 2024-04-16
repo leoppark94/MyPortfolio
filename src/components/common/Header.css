@@ -3,24 +3,20 @@
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-left: 40px;
-  margin-right: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .header-left-content {
   display: flex;
   align-items: end;
   justify-content: flex-start;
-  margin-top: 10px;
-  margin-bottom: 20px;
 }
 
 .header-right-content {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 10px;
-  margin-bottom: 20px;
 }
 
 .header-title-main {
@@ -40,18 +36,45 @@
 .icon-email {
   width: 60px;
   height: 60px;
-  margin-left: 60px;
 }
 .hamburger {
   display: none;
 }
 
-.BackEnd-Describe,
-.FrontEnd-Describe,
-.AI-Describe,
-.AboutMe-Describe,
-.Email-Describe {
+.describe-backend,
+.describe-frontend,
+.describe-AI,
+.describe-aboutme,
+.describe-email {
+  display: inherit;
+  align-items: center;
   margin-left: 10px;
+}
+
+.header-icon-describe-box {
+  display: inherit;
+  margin-left: 60px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-icon-describe-box,
+.header-icon-describe-box:link,
+.header-icon-describe-box:visited,
+.header-icon-describe-box:hover,
+.header-icon-describe-box:active {
+  color: black;
+  text-decoration: none;
+}
+
+.header-icon-describe-box {
+  transition: background-color 0.3s; /* 배경 색상 변화를 위한 전환 효과 */
+  background-color: #ffffff; /* 기본 배경 색상 */
+}
+
+.header-icon-describe-box:hover {
+  background-color: #f7f7f7; /* 호버 시 배경 색상 */
 }
 
 @media (max-width: 1250px) {
@@ -63,7 +86,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 60px;
     right: 30px;
     background-color: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -79,16 +102,25 @@
     width: 35px;
   }
 
+  .header-icon-describe-box {
+    margin-left: 0;
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+
   .icon-toggle {
     width: 60px;
     height: 60px;
     margin-right: 40px;
   }
-  .BackEnd-Describe,
-  .FrontEnd-Describe,
-  .AI-Describe,
-  .AboutMe-Describe,
-  .Email-Describe {
+  .describe-backend,
+  .describe-frontend,
+  .describe-AI,
+  .describe-aboutme,
+  .describe-email {
+    margin-left: 0;
     text-align: center; /* 텍스트를 가운데 정렬 */
   }
 
@@ -97,6 +129,7 @@
   .icon-ai,
   .icon-aboutme,
   .icon-email {
+    /* display: none; */
     margin-left: 0;
     margin-right: 0;
     margin-top: 10px;
