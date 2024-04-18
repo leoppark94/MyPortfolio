@@ -74,7 +74,7 @@
 }
 
 .header-icon-describe-box:hover {
-  background-color: #f7f7f7; /* 호버 시 배경 색상 */
+  background-color: #dedede; /* 호버 시 배경 색상 */
 }
 
 @media (max-width: 1250px) {

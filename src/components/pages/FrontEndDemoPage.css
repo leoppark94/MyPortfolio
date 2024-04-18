@@ -1,0 +1,61 @@
+.frontend_demo_body {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.frontend_demo_title {
+  font-size: 45px;
+  margin-bottom: 40px;
+  font-weight: bolder;
+}
+
+.forntend_demo_text {
+  font-size: 36px;
+  margin-botton: 122px;
+}
+
+.forntend_demo_small_title {
+  font-weight: bolder;
+  font-size: 36px;
+}
+
+.ReactDIV {
+  display: flex;
+  align-items: center;
+  margin-botto: 40px;
+}
+
+.ReactLogo {
+  width: 450px;
+  height: auto;
+}
+
+.react_text_box {
+  margin-left: 20px;
+}
+
+.FigmaDIV {
+  display: flex;
+  align-items: center;
+}
+
+.FigmaLogo {
+  width: 400px;
+  height: auto;
+}
+
+.GithubDIV {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.githubImage {
+  max-width: 450px;
+  height: auto;
+}
+
+.github_text_box {
+  margin-left: 20px;
+}
